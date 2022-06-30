@@ -13,5 +13,174 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="#" method="post">
+
+      <fieldset class="group-form-field">
+        <legend>Personal information</legend>
+        <label class="form-field">
+          Surname:
+          <input type="text"
+            autocomplete="off"
+            name="Surname"
+            required
+          >
+        </label>
+
+        <label class="form-field">
+          Name:
+          <input type="text"
+            autocomplete="off"
+            name="name"
+            required
+          >
+        </label>
+
+        <label class="form-field">
+          How old are You?
+          <input 
+            name="old" 
+            required
+            type="number"
+            size="3"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+
+        <label class="data">
+          Full date of birth:
+          <input
+            type="data"
+            name="FullDate"
+            required
+            placeholder="дд.мм.рррр"
+            size="17"
+          >
+        </label>
+
+        <label class="margin-bottom">
+          I accept the term of the agreement
+          <input type="checkbox" 
+            name="iata" 
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="group-form-field">
+        <legend>Registration</legend>
+        <div class="form-field">
+          <label for="mail">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+            id="mail"
+          >
+        </div>
+
+        <div class="margin-bottom">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="32"
+            id="password"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="group-form-field">
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          Do you love cats?
+          <input
+              type="radio"
+              name="animals"
+              value="yes"
+              id="yes"
+            >
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            name="animals"
+            value="no"
+            id="no"
+          >
+          <label for="no">No</label>
+        </div>
+
+        <label class="form-field">
+          What is your favorite color?
+          <input type="color"
+            name="color"
+            required
+          >
+        </label>
+
+        <label class="form-field">
+          What time do you go to bed?
+          <input type="time"
+            name="time"
+            step="2"
+          >
+        </label>
+
+        <label class="form-field">
+          What are your favorite brand of cars?
+          <select
+            name="cars" 
+            required 
+            multiple
+          >
+            <option value="BMV">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+
+        <label class="margin-bottom">
+          How do you rate our work?
+          <input type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="50"
+            required
+          >
+        </label>
+
+      </fieldset>
+
+      <fieldset class="group-form-field">
+        <legend>Additional info:</legend>
+        
+        <label  class="form-field">
+          Comments:
+          <textarea 
+            name="message"
+            rows="2"
+            cols="20"
+          >
+          </textarea>
+        </label>
+
+        <label  class="margin-bottom">
+          Would you recommend us?
+          <select>
+            <option value="yes">yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <div  class="margin-bottom">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </body>
 </html>
