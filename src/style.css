@@ -3,7 +3,7 @@
   margin-bottom: 10px;
 }
 
-.margin-bottom {
+.step-back-form {
   margin: 0;
 }
 
@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-.data {
+.form-data {
   display: block;
   height: 34px;
 }
